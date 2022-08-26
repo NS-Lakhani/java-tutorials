@@ -1,4 +1,4 @@
-package com.javachamp.multithreading.examples;
+package com.javachamp.multithreading;
 
 public class MissingVisibility {
 
