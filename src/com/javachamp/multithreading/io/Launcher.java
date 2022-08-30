@@ -12,9 +12,11 @@ public class Launcher {
 		ReaderThread reader = new ReaderThread(queue);
 		WriterThread writer = new WriterThread(queue);
 
-		new Thread(reader).start();
-		new Thread(writer).start();
-
+		Thread t1 = new Thread(reader);
+		Thread t2 = new Thread(writer);
+		
+		t1.start();
+		t2.start();
 	}
 
 }

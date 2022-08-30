@@ -1,6 +1,6 @@
 package com.javachamp.concurrency.racecondition;
 
-public class RaceConditionExampl3 {
+public class RaceConditionExample3 {
 
 	public static void main(String[] args) {
 		Counter counter1 = new Counter();

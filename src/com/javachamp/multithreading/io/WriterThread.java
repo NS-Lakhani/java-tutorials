@@ -15,10 +15,12 @@ public class WriterThread implements Runnable {
 
 	@Override
 	public void run() {
+		System.out.println("Name of working thread : " + Thread.currentThread().getName());
+		
 		PrintWriter writer = null;
 
 		try {
-			writer = new PrintWriter(new File("outputFile.txt"));
+			writer = new PrintWriter(new File("C:\\Users\\nishat.lakhani_infob\\Desktop\\outputFile.txt"));
 
 			while (true) {
 				String buffer = blockingQueue.take();
